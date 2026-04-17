@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testable Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article data-testid="test-profile-card" class="card">
+      <!-- Avatar -->
+      <figure class="avatar-container">
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Photo of John Doe smiling"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <div class="content">
+        <!-- Name -->
+        <header>
+          <h2 data-testid="test-user-name">Abiodun Femi</h2>
+        </header>
+
+        <!-- Bio -->
+        <p data-testid="test-user-bio">
+          Frontend developer, creative in building responsive website, user
+          interface layout, visual presentation, and digital content
+          structuring. Strong background in project coordination, communication,
+          and delivering visually engaging and user-friendly digital
+          experiences.
+        </p>
+
+        <!-- Time -->
+        <p data-testid="test-user-time" aria-live="polite"></p>
+
+        <!-- Social Links -->
+        <nav data-testid="test-user-social-links">
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/femi-abiodun-a60863233"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-linkedin"
+              >
+                Linkedin
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://x.com/femi_ezekiel16"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-twitter"
+              >
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/femiezekiel16"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-github"
+              >
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Hobbies -->
+        <section data-testid="test-user-hobbies">
+          <h3>Hobbies</h3>
+          <ul>
+            <li>Coding</li>
+            <li>Reading</li>
+            <li>Gaming</li>
+          </ul>
+        </section>
+
+        <!-- Dislikes -->
+        <section data-testid="test-user-dislikes">
+          <h3>Dislikes</h3>
+          <ul>
+            <li>Slow websites</li>
+            <li>Poor UI</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>

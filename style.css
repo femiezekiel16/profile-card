@@ -1,0 +1,85 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+/* Card */
+.card {
+  max-width: 800px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Avatar */
+.avatar-container {
+  text-align: center;
+}
+
+.avatar-container img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Social Links */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+}
+
+/* Focus styles (Accessibility) */
+a:focus {
+  outline: 2px solid #000;
+}
+
+/* Sections */
+section ul {
+  margin-top: 5px;
+  padding-left: 20px;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .avatar-container {
+    flex: 1;
+  }
+
+  .content {
+    flex: 2;
+  }
+}
